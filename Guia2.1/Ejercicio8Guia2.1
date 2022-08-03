@@ -1,0 +1,18 @@
+Algoritmo sin_titulo
+	definir entrada, aux, primeraletra Como Caracter
+	escribir "Ingrese una frase o palabra"
+	leer entrada
+	
+	primeraletra<-Subcadena(entrada,0,1)
+	aux<- Subcadena(entrada,Longitud(entrada),Longitud(entrada))
+	
+	si aux==primeraletra
+		escribir "correcto"
+		escribir "La primera letra es: ", primeraletra
+		escribir "La ultima letra es: ", aux
+	SiNo
+		Escribir "Incorrecto"
+		escribir "La primera letra es: ", primeraletra
+		escribir "La ultima letra es: ", aux
+	FinSi
+FinAlgoritmo

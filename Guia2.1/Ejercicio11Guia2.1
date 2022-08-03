@@ -1,0 +1,22 @@
+Algoritmo sin_titulo
+	definir grado , producciondefectuosos, produccionnormal Como Entero
+	Escribir  "cuantos tornillos normales produjo?"
+	leer produccionnormal
+	escribir "Cuantos tornillos sin defectos produjo?"
+	leer producciondefectuosos
+	
+	grado<-5
+	
+	si producciondefectuosos<200
+		grado<-6
+		si produccionnormal>10000
+			grado<-7
+			si producciondefectuosos<200 y produccionnormal>10000
+				grado<-8
+			FinSi
+			
+		FinSi
+	FinSi
+	
+	Escribir "su grado es: ", grado
+FinAlgoritmo
