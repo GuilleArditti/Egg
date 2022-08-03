@@ -1,0 +1,37 @@
+Algoritmo sin_titulo
+	
+	definir entrada, maximo, minimo,iteraciones como entero
+	definir promedio Como Real
+	
+	escribir "Ingrese un numero"
+	leer entrada
+	
+	minimo=entrada
+	maximo=entrada
+	mientras entrada <>0 Hacer
+		
+		iteraciones=iteraciones+1
+		promedio=promedio+entrada
+		
+			si entrada<minimo
+				minimo=entrada
+			FinSi
+
+		
+			si entrada>maximo
+				maximo=entrada
+			FinSi
+			
+
+		
+		escribir "Ingrese un numero"
+		leer entrada
+		
+	FinMientras
+
+	promedio = promedio/iteraciones
+	escribir "Maximo: ", maximo
+	escribir "Minimo: ", minimo
+	Escribir "promedio:", promedio
+	
+FinAlgoritmo

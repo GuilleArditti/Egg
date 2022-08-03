@@ -1,0 +1,35 @@
+//Teniendo en cuenta que la clave es "eureka", escribir un programa que nos pida ingresar
+//una clave. Sólo se cuenta con 3 intentos para acertar, si fallamos los 3 intentos se deberá
+//		mostrar un mensaje indicándonos que hemos agotado esos 3 intentos. Si acertamos la
+//			clave se deberá mostrar un mensaje que indique que se ha ingresado al sistema
+//			correctamente.
+
+Algoritmo sin_titulo
+	Definir codigo, entrada Como Caracter
+	definir contador Como Entero
+	contador<-3
+	codigo<-"Eureka"
+	
+	escribir "Ingrese la palabra magica"
+	leer entrada
+	
+	Mientras entrada<>codigo y contador>0 Hacer
+		contador= contador-1
+		escribir "Error. intentos restantes: ", contador
+		
+		escribir "Ingrese la palabra magica"
+		leer entrada
+		
+		
+		
+	FinMientras
+	
+	si entrada=codigo
+		escribir "Felicitaciones, acertaste la palabra!"
+	SiNo
+		Escribir  "Segui participando"
+	FinSi
+
+	
+	
+FinAlgoritmo
